@@ -1,200 +1,422 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ResolveIQ Weddings | Create Your Wedding Website in Minutes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- INLINE CSS (guaranteed to work on Vercel) -->
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3a8a, #047857);
-      color: white;
-    }
+<title>ResolveIQ Weddings | Your Love Story Beautifully Shared</title>
 
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
+<style>
 
-    .hero {
-      padding: 100px 20px;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+body{
+font-family: Georgia, serif;
+background:#faf7f2;
+color:#5a4b3d;
+line-height:1.7;
+}
 
-    h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      font-weight: 400;
-    }
+.hero{
+background:linear-gradient(to bottom,#faf7f2,#f1e7d8);
+padding:120px 20px;
+text-align:center;
+}
 
-    p {
-      max-width: 650px;
-      margin: 0 auto 20px;
-      opacity: 0.9;
-      line-height: 1.5;
-    }
+.hero h1{
+font-size:60px;
+max-width:900px;
+margin:auto;
+line-height:1.1;
+margin-bottom:20px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      background: white;
-      color: black;
-      border-radius: 8px;
-      text-decoration: none;
-      margin: 10px;
-      font-weight: bold;
-    }
+.hero p{
+max-width:700px;
+margin:auto;
+font-size:22px;
+color:#6e5c4b;
+}
 
-    .btn.secondary {
-      background: transparent;
-      border: 1px solid white;
-      color: white;
-    }
+.buttons{
+margin-top:35px;
+}
 
-    .card {
-      background: rgba(255,255,255,0.12);
-      padding: 20px;
-      margin: 15px auto;
-      max-width: 420px;
-      border-radius: 14px;
-    }
+.btn{
+display:inline-block;
+padding:15px 30px;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:8px;
+transition:0.3s;
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+.btn-primary{
+background:#b8925a;
+color:white;
+}
 
-    li {
-      margin: 10px 0;
-    }
+.btn-primary:hover{
+opacity:.9;
+}
 
-    .cta {
-      background: rgba(0,0,0,0.25);
-      padding: 80px 20px;
-    }
+.btn-secondary{
+border:2px solid #b8925a;
+color:#b8925a;
+}
 
-    .trust {
-      opacity: 0.8;
-      font-size: 14px;
-    }
-  </style>
+.section{
+padding:90px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:15px;
+}
+
+.section-subtitle{
+text-align:center;
+max-width:700px;
+margin:0 auto 50px;
+color:#6e5c4b;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.video-card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.video-card video{
+width:100%;
+display:block;
+}
+
+.video-content{
+padding:25px;
+}
+
+.video-content h3{
+margin-bottom:10px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.feature h3{
+margin-bottom:10px;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.step{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.plan{
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.price{
+font-size:48px;
+font-weight:bold;
+color:#b8925a;
+margin:20px 0;
+}
+
+.cta{
+background:#b8925a;
+color:white;
+padding:100px 20px;
+text-align:center;
+}
+
+.cta h2{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.cta p{
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.cta .btn{
+background:white;
+color:#5a4b3d;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#8a7b6d;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Beautiful Wedding Websites in Minutes</h1>
-    <h2>Turn your memories into a stunning wedding experience</h2>
+<section class="hero">
 
-    <p>
-      Upload your photos and details. We instantly generate a wedding website
-      with RSVP, photo gallery, timeline, and guestbook — all in one link.
-    </p>
+<h1>
+Your Love Story Deserves More Than a Group Chat
+</h1>
 
-    <a class="btn" href="#demo">View Demo</a>
-    <a class="btn secondary" href="#pricing">Get Early Access</a>
-  </section>
+<p>
+Create a beautiful wedding website where guests can RSVP, view your timeline, browse your memories, and celebrate your journey together.
+</p>
 
-  <!-- TRUST -->
-  <section class="trust">
-    Trusted by modern couples who want simple, beautiful wedding sharing.
-  </section>
+<div class="buttons">
+<a href="#demo" class="btn btn-primary">Watch Demo</a>
+<a href="#pricing" class="btn btn-secondary">View Pricing</a>
+</div>
 
-  <!-- DEMO -->
-  <section id="demo">
-    <h2>See Your Wedding Website Experience</h2>
+</section>
 
-    <div class="card">
-      <h3>Sarah & Michael Wedding Website</h3>
-      <p>Complete wedding site with RSVP, gallery, and timeline.</p>
-    </div>
+<section id="demo" class="section">
 
-    <div class="card">
-      <h3>Our Wedding Story</h3>
-      <p>Cinematic memory-style storytelling experience for your special day.</p>
-    </div>
+<div class="container">
 
-    <div class="card">
-      <h3>Guest Experience Demo</h3>
-      <p>Guests can RSVP, view photos, and leave messages.</p>
-    </div>
-  </section>
+<h2 class="section-title">
+See The Experience
+</h2>
 
-  <!-- FEATURES -->
-  <section>
-    <h2>Everything You Need in One Place</h2>
+<p class="section-subtitle">
+Turn your wedding into a timeless digital experience your family and friends can revisit forever.
+</p>
 
-    <ul>
-      <li>✔ Instant RSVP tracking</li>
-      <li>✔ Beautiful photo galleries</li>
-      <li>✔ Wedding timeline & schedule</li>
-      <li>✔ Guestbook messages & wishes</li>
-      <li>✔ Mobile-friendly sharing link</li>
-    </ul>
-  </section>
+<div class="video-grid">
 
-  <!-- HOW IT WORKS -->
-  <section>
-    <h2>How It Works</h2>
+<div class="video-card">
+<video controls>
+<source src="assets/hero.mp4" type="video/mp4">
+</video>
 
-    <div class="card">
-      <h3>1. Upload</h3>
-      <p>Add your photos, story, and wedding details.</p>
-    </div>
+<div class="video-content">
+<h3>Wedding Website Experience</h3>
+<p>
+Beautiful wedding homepage, RSVP system, timeline, and gallery.
+</p>
+</div>
+</div>
 
-    <div class="card">
-      <h3>2. Generate</h3>
-      <p>We instantly build your wedding website.</p>
-    </div>
+<div class="video-card">
+<video controls>
+<source src="assets/story.mp4" type="video/mp4">
+</video>
 
-    <div class="card">
-      <h3>3. Share</h3>
-      <p>Send one link to all your guests.</p>
-    </div>
-  </section>
+<div class="video-content">
+<h3>Our Wedding Story</h3>
+<p>
+A cinematic storytelling experience built from your memories.
+</p>
+</div>
+</div>
 
-  <!-- PRICING -->
-  <section id="pricing">
-    <h2>Simple Pricing</h2>
+<div class="video-card">
+<video controls>
+<source src="assets/demo.mp4" type="video/mp4">
+</video>
 
-    <div class="card">
-      <h3>Starter</h3>
-      <p>$49 — Wedding website + RSVP system</p>
-    </div>
+<div class="video-content">
+<h3>Guest Experience</h3>
+<p>
+Guests RSVP, leave messages, and share in your celebration.
+</p>
+</div>
+</div>
 
-    <div class="card">
-      <h3>Premium</h3>
-      <p>$99 — Full wedding experience + customization</p>
-    </div>
+</div>
 
-    <div class="card">
-      <h3>Deluxe</h3>
-      <p>$199 — Everything + priority setup + custom design</p>
-    </div>
-  </section>
+</div>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Your Wedding Deserves More Than a Group Chat</h2>
-    <p>Start building your wedding website today in minutes.</p>
+</section>
 
-    <a class="btn" href="#">
-      Create My Wedding Website
-    </a>
-  </section>
+<section class="section">
 
-  <!-- FOOTER -->
-  <section style="text-align:center; padding:40px; opacity:0.7;">
-    <p>ResolveIQ Weddings © 2026</p>
-  </section>
+<div class="container">
+
+<h2 class="section-title">
+Everything Included
+</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>RSVP Tracking</h3>
+<p>Know exactly who's attending your special day.</p>
+</div>
+
+<div class="feature">
+<h3>Photo Galleries</h3>
+<p>Showcase engagement photos and wedding memories.</p>
+</div>
+
+<div class="feature">
+<h3>Wedding Timeline</h3>
+<p>Help guests stay informed and organized.</p>
+</div>
+
+<div class="feature">
+<h3>Guestbook</h3>
+<p>Collect messages and wishes from loved ones.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+How It Works
+</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Upload</h3>
+<p>Add your photos, story, and wedding details.</p>
+</div>
+
+<div class="step">
+<h3>2. Generate</h3>
+<p>We create your personalized wedding website.</p>
+</div>
+
+<div class="step">
+<h3>3. Share</h3>
+<p>Send one beautiful link to everyone.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="pricing" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Simple Pricing
+</h2>
+
+<div class="pricing">
+
+<div class="plan">
+<h3>Starter</h3>
+<div class="price">$49</div>
+<p>Wedding website + RSVP</p>
+</div>
+
+<div class="plan">
+<h3>Premium</h3>
+<div class="price">$99</div>
+<p>Website, gallery, RSVP, timeline, guestbook</p>
+</div>
+
+<div class="plan">
+<h3>Deluxe</h3>
+<div class="price">$199</div>
+<p>Premium customization and concierge setup</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+Create Your Wedding Website Today
+</h2>
+
+<p>
+Share your love story beautifully and give your guests an unforgettable experience.
+</p>
+
+<a href="#" class="btn">
+Create My Wedding Website
+</a>
+
+</section>
+
+<footer>
+ResolveIQ Weddings © 2026
+</footer>
 
 </body>
 </html>
