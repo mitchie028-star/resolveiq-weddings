@@ -4,7 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ResolveIQ Weddings | Create Your Wedding Website in Minutes</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- INLINE CSS (guaranteed to work on Vercel) -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3a8a, #047857);
+      color: white;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    p {
+      max-width: 650px;
+      margin: 0 auto 20px;
+      opacity: 0.9;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: white;
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.12);
+      padding: 20px;
+      margin: 15px auto;
+      max-width: 420px;
+      border-radius: 14px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    .cta {
+      background: rgba(0,0,0,0.25);
+      padding: 80px 20px;
+    }
+
+    .trust {
+      opacity: 0.8;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,42 +99,32 @@
       with RSVP, photo gallery, timeline, and guestbook — all in one link.
     </p>
 
-    <div>
-      <a class="btn" href="#demo">View Demo</a>
-      <a class="btn secondary" href="#pricing">Get Early Access</a>
-    </div>
+    <a class="btn" href="#demo">View Demo</a>
+    <a class="btn secondary" href="#pricing">Get Early Access</a>
   </section>
 
-  <!-- TRUST STRIP -->
-  <section>
-    <p style="opacity:0.8;">
-      Trusted for modern couples who want simple, beautiful wedding sharing.
-    </p>
+  <!-- TRUST -->
+  <section class="trust">
+    Trusted by modern couples who want simple, beautiful wedding sharing.
   </section>
 
-  <!-- DEMO SECTION -->
+  <!-- DEMO -->
   <section id="demo">
     <h2>See Your Wedding Website Experience</h2>
 
     <div class="card">
       <h3>Sarah & Michael Wedding Website</h3>
-      <p>
-        A complete wedding site with RSVP tracking, gallery, and timeline.
-      </p>
+      <p>Complete wedding site with RSVP, gallery, and timeline.</p>
     </div>
 
     <div class="card">
       <h3>Our Wedding Story</h3>
-      <p>
-        A cinematic memory-style storytelling experience for your special day.
-      </p>
+      <p>Cinematic memory-style storytelling experience for your special day.</p>
     </div>
 
     <div class="card">
       <h3>Guest Experience Demo</h3>
-      <p>
-        See how guests interact, RSVP, and leave messages in real-time.
-      </p>
+      <p>Guests can RSVP, view photos, and leave messages.</p>
     </div>
   </section>
 
@@ -111,7 +181,7 @@
     </div>
   </section>
 
-  <!-- FINAL CTA -->
+  <!-- CTA -->
   <section class="cta">
     <h2>Your Wedding Deserves More Than a Group Chat</h2>
     <p>Start building your wedding website today in minutes.</p>
